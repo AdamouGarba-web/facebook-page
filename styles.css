@@ -1,0 +1,206 @@
+/* ==== RESET ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, Arial, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10px;
+}
+
+/* ==== SECTION HEADER ==== */
+section {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1c1e21;
+}
+
+header p {
+    font-size: 17px;
+    color: #606770;
+}
+
+/* ==== MAIN CONTAINER ==== */
+main {
+    background: #fff;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* ==== INPUTS GÉNÉRAUX ==== */
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c6c9cd;
+    border-radius: 5px;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border: 2px solid #37393b;
+}
+
+
+/* ==== NOM & PRÉNOM ==== */
+.nom-p {
+    display: flex;
+    gap: 10px;
+}
+
+.nom-p input {
+    width: 50%;
+}
+
+/* ==== ADRESSE & MOT DE PASSE ==== */
+.adress {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* ==== DATE DE NAISSANCE ==== */
+.date-naiss {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.date-naiss select {
+    background-color: rgb(230, 226, 226);
+}
+.cla1 {
+    margin-top: 15px;
+    font-size: small;
+    color: gray;
+}
+
+.date-naiss label {
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ==== GENRE ==== */
+.genre {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+}
+
+.genre div {
+    flex: 1;
+    border: 1px solid #ccd0d5;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    color: #575a5f;
+}
+
+.genre input {
+    width: auto;
+    margin: 0;
+}
+
+.genre label {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px; /* espace très réduit */
+   
+}
+
+.cla2 {
+    margin-top: 15px;
+    font-size: small;
+    color: gray;
+}
+
+
+/* ==== TEXTE DES CONDITIONS ==== */
+.ma-cla {
+    margin-top: 15px;
+}
+
+.pargraphe {
+    font-size: 11px;
+    color: #606770;
+    line-height: 1.4;
+}
+
+.pargraphe a {
+    color: #67bce3;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pargraphe a:hover {
+    text-decoration: underline;
+}
+
+/* ==== BOUTON ==== */
+.buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.buttons button {
+    background: #00a400;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 50px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.buttons button:hover {
+    background: #039003;
+}
+
+
+@media (max-width: 768px) {
+    .nom-p {
+        flex-direction: column;
+    }
+
+    .nom-p input {
+        width: 100%;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .date-naiss {
+        flex-direction: column;
+    }
+
+    .genre {
+        flex-direction: column;
+    }
+}
