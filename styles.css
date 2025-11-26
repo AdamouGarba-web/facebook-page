@@ -113,7 +113,6 @@ input:focus, select:focus {
     align-items: stretch;
     gap: 10px;
     width: 100%;
-    cursor: pointer;
 }
 
 .genre div {
@@ -133,6 +132,7 @@ input:focus, select:focus {
 }
 
 .genre label {
+     cursor: pointer;
     display: inline-flex;
     align-items: center;
     gap: 4px; /* espace très réduit */
